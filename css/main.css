@@ -13,9 +13,14 @@
    ========================================================================== */
 
    html {
-    color: #222;
+     background: #111111;
+    color: #fff;
     font-size: 1em;
     line-height: 1.4;
+}
+body{
+    background: #111111;
+    color: #fff;
 }
 
 /*

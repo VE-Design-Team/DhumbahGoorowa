@@ -1,12 +1,12 @@
 {
-  "short_name": "",
-  "name": "",
+  "short_name": "Dodgy Deals",
+  "name": "A tour of Collins street",
   "icons": [{
     "src": "icon.png",
     "type": "image/png",
     "sizes": "192x192"
   }],
-  "start_url": "/?utm_source=homescreen",
+  "start_url": "https://batmanian.github.io/dodgydeals/",
   "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }

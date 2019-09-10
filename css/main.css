@@ -1,27 +1,32 @@
 /*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
 
+
 /* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
 
- 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-     background: #111111;
+html {
+    background: #111111;
     color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
-body{
+
+body {
     background: #111111;
     color: #fff;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -38,6 +43,7 @@ body{
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -50,6 +56,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -66,6 +73,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -76,6 +84,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -83,6 +92,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -96,38 +106,24 @@ textarea {
 }
 
 
-
-
- /* ==========================================================================
+/* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* ==========================================================================
+/* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
  */
 
- .hidden {
-  display: none !important;
+.hidden {
+    display: none !important;
 }
+
 
 /*
 * Hide only visually, but have it available for screen readers:
@@ -139,16 +135,18 @@ textarea {
 */
 
 .visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap; /* 1 */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
 }
+
 
 /*
 * Extends the .visuallyhidden class to allow the element
@@ -158,22 +156,24 @@ textarea {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
-  white-space: inherit;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
 }
+
 
 /*
 * Hide visually and from screen readers, but maintain layout
 */
 
 .invisible {
-  visibility: hidden;
+    visibility: hidden;
 }
+
 
 /*
 * Clearfix: contain floats
@@ -189,73 +189,70 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
 
- 
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
+@media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
- 
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-   @media print {
+@media print {
     *,
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster */
+        color: #000 !important;
+        /* Black prints faster */
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -264,41 +261,88 @@ textarea {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
     }
 }
 
-
-#1, #2
-{
+#select1,
+#select2,
+#select3,
+#select4,
+#select5,
+#select6,
+#select7,
+#select8,
+#select9 {
     min-height: 50px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50%;
+    border: 10px double #111111;
+    /* this is actually (426/1140)*100 */
 }
 
-#1
-{
-    background: src("/img/one.svg")
+#select1 {
+    background-image: url(../img/0/one.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select2 {
+    background-image: url(../img/0/two.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select3 {
+    background-image: url(../img/0/three.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select4 {
+    background-image: url(../img/0/four.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select5 {
+    background-image: url(../img/0/five.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select6 {
+    background-image: url(../img/0/six.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select7 {
+    background-image: url(../img/0/seven.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select8 {
+    background-image: url(../img/0/eight.svg);
+    /* background-image: url(/img/0/one.svg); */
+}
+
+#select9 {
+    background-image: url(../img/0/nine.svg);
+    /* background-image: url(/img/0/one.svg); */
 }

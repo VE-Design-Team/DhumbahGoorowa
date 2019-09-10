@@ -12,7 +12,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
-  
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -31,30 +31,39 @@
     <!-- Add your site or application content here -->
     <div class="container-fluid">
         <div class="row">
-            <a href="1.html" id="1" class="col-4">1</a>
-            <a href="2.html" id="2"  class="col-4">2</a>
-            <a href="3.html" id="3"  class="col-4">3</a>
-            <a href="4.html" id="4"  class="col-4">4</a>
-            <a href="5.html" id="5"  class="col-4">5</a>
-            <a href="6.html" id="6"  class="col-4">6</a>
-            <a href="7.html" id="7"  class="col-4">7</a>
-            <a href="8.html" id="8"  class="col-4">8</a>
+            <a href="1.html" id="select1" class="col-4">
+                <span class="sr-only">1</span>
+            </a>
+            <a href="2.html" id="select2" class="col-4"><span class="sr-only">1</span></a>
+            <a href="3.html" id="select3" class="col-4"><span class="sr-only">1</span></a>
+            <a href="4.html" id="select4" class="col-4"><span class="sr-only">1</span></a>
+            <a href="5.html" id="select5" class="col-4"><span class="sr-only">1</span></a>
+            <a href="6.html" id="select6" class="col-4"><span class="sr-only">1</span></a>
+            <a href="7.html" id="select7" class="col-4"><span class="sr-only">1</span></a>
+            <a href="8.html" id="select8" class="col-4"><span class="sr-only">1</span></a>
+            <a href="9.html" id="select9" class="col-4"><span class="sr-only">1</span></a>
         </div>
 
 
 
 
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script>
+            window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
-            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-            ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+            window.ga = function() {
+                ga.q.push(arguments)
+            };
+            ga.q = [];
+            ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto');
+            ga('send', 'pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>

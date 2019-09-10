@@ -293,3 +293,12 @@ textarea {
 }
 
 
+#1, #2
+{
+    min-height: 50px;
+}
+
+#1
+{
+    background: src("/img/one.svg")
+}

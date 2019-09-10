@@ -346,3 +346,15 @@ textarea {
     background-image: url(../img/0/nine.svg);
     /* background-image: url(/img/0/one.svg); */
 }
+
+.btn-primary {
+    background-color: #56b48c!important
+}
+
+.btn-primary:not([disabled]):not(.disabled).active,
+.btn-primary:not([disabled]):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+    background-color: #31634c!important;
+}

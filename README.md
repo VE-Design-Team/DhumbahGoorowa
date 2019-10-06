@@ -1,6 +1,6 @@
 # Commitment to share: Dhumbah Goorowa in your pocket – 
 
-## Authors : VEDT Design Team
+## Authors : Jack Dunstan  + The Vocational Education Design Team
 
 Don't tell me again about RMIT's silos. They're in your mind. There are plenty of ways to share workflows, educational resources across teams and communities at RMIT are keen to share, and learn from you too. 
 

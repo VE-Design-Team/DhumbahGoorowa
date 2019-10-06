@@ -4,12 +4,13 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+    Jack Dunstan - Developer, Author - @dunstanet
 
 # THANKS
 
-    <name>
+    RMIT
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Bootstrap, jQuery, Modernizr, Normalize.css

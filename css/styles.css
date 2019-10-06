@@ -1,14 +1,12 @@
 /* custom styles */
-html
-{
-    background: #111111;
-}
-#1, #2,
-{
-    min-height: 50px;
+html {
+    background: #000054;
+    color: #fff;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
-div#1
-{
-    background: src("/img/one.svg")
+body {
+    background: #000054;
+    color: #fff;
 }

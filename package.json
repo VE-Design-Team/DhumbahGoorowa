@@ -1,0 +1,28 @@
+{
+  "name": "dhumbahgoorowa",
+  "version": "1.0.0",
+  "description": "Just another development environment ",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VE-Design-Team/DhumbahGoorowa.git"
+  },
+  "author": "Jack Dunstan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VE-Design-Team/DhumbahGoorowa/issues"
+  },
+  "homepage": "https://github.com/VE-Design-Team/DhumbahGoorowa#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  }
+}

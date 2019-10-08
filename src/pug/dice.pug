@@ -1,0 +1,73 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title CSS3 Rolling Dice
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css')
+    link(rel='stylesheet', href='css/dice.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js')
+    script(type='text/javascript').
+      // Create an array of the links to choose from:
+      var links = new Array();
+      links[0] = "http://www.google.com/";
+      links[1] = "http://www.bing.com/";
+      links[2] = "http://www.yahoo.com/";
+      links[3] = "http://www.apple.com/";
+      function openLink() {
+      // Chooses a random link:
+      var i = Math.floor(Math.random() * links.length);
+      // Directs the browser to the chosen target:
+      parent.location = links[i];
+      return false;
+      }
+  body
+    #background
+    #wrapper
+      input#secondroll(name='roll', type='checkbox' onclick='openLink();') 
+      input#roll(name='roll', type='checkbox')
+      label(for='roll') Gimme something
+      label(for='secondroll')
+        span Stop
+      #platform
+        #dice
+          .side.front
+            .dot.center
+          .side.front.inner
+          .side.top
+            .dot.dtop.dleft
+            .dot.dbottom.dright
+          .side.top.inner
+          .side.right
+            .dot.dtop.dleft
+            .dot.center
+            .dot.dbottom.dright
+          .side.right.inner
+          .side.left
+            .dot.dtop.dleft
+            .dot.dtop.dright
+            .dot.dbottom.dleft
+            .dot.dbottom.dright
+          .side.left.inner
+          .side.bottom
+            .dot.center
+            .dot.dtop.dleft
+            .dot.dtop.dright
+            .dot.dbottom.dleft
+            .dot.dbottom.dright
+          .side.bottom.inner
+          .side.back
+            .dot.dtop.dleft
+            .dot.dtop.dright
+            .dot.dbottom.dleft
+            .dot.dbottom.dright
+            .dot.center.dleft
+            .dot.center.dright
+          .side.back.inner
+          .side.cover.x
+          .side.cover.y
+          .side.cover.z
+    // partial
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js')
+    
+    
+

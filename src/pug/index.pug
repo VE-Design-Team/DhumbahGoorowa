@@ -1,0 +1,67 @@
+doctype html
+html.no-js(lang='')
+  head
+    meta(charset='utf-8')
+    title Dhumbah Goorowa in your pocket
+    meta(name='description', content='A walking tour of Collins street')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', sizes='180x180', href='apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
+    link(rel='manifest', href='site.webmanifest')
+    link(rel='mask-icon', href='safari-pinned-tab.svg', color='#5bbad5')
+    meta(name='msapplication-TileColor', content='#ffc40d')
+    meta(name='theme-color', content='#ffffff')
+    // Place favicon.ico in the root directory
+    link(rel='stylesheet', href='css/normalize.css')
+    link(rel='stylesheet', href='css/main.css')
+    // Font Awesome
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+    // Bootstrap core CSS
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
+    // Material Design Bootstrap
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.4/css/mdb.min.css', rel='stylesheet')
+    meta(name='theme-color', content='#fafafa')
+    link(rel='stylesheet', href='css/styles.css')
+  body
+    //if lte IE 9
+      p.browserupgrade
+        | You are using an 
+        strong outdated
+        |  browser. Please 
+        a(href='https://browsehappy.com/') upgrade your browser
+        |  to improve your experience and security.
+    // Add your site or application content here
+    .container
+      .row
+        .col-12
+          br
+          h1.text-center Dhumbah Goorowa in your pocket
+        .col-12
+          img.img-fluid.w-100(src='./img/index/home.png')
+        .col-12
+          br
+          //
+            <a class="h5 text-white text-center"
+            href="http://bit.ly/dodgydealscollins">http://bit.ly/dodgydealscollins</a>
+            <br>
+          br
+        .col-12
+          // <a href="0.html" class="btn btn-primary btn-lg btn-block">Start</a>
+          br
+    script(src='js/vendor/modernizr-3.6.0.min.js')
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    script.
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\\/script>')
+    script(src='js/plugins.js')
+    script(src='js/main.js')
+    // Google Analytics: change UA-XXXXX-Y to be your site's ID.
+    script.
+      window.ga = function () {
+      ga.q.push(arguments)
+      };
+      ga.q = [];
+      ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('send', 'pageview')
+    script(src='https://www.google-analytics.com/analytics.js', async='', defer='')

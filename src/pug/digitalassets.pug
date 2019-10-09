@@ -1,0 +1,35 @@
+mixin title
+    | Library Digital Assets
+body.bg-secondary  
+    include header.pug
+    .container.mb-5
+        row
+            col-12
+                h1.pt-3 
+                    +title
+                p Some key library resources we’ve found especially useful are the digital collections.
+                p There are many ways into the library, these resources have been some of the most helpful
+
+                hr
+                h3 RMIT library's Digital collections
+                ul
+                    li 
+                        a(href='https://primo-direct-apac.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=RMITU' title='RMIT Digital Collections') Open Educational resources
+                    li 
+                        a(href='https://primo-direct-apac.hosted.exlibrisgroup.com/primo-explore/collectionDiscovery?vid=RMITU&collectionId=81105280870001341' title='Open Educational Resources not created by RMIT') Open Educational Resources not created by RMIT
+                hr
+                h3 External resources
+                ul
+                    li 
+                        a(href='https://oer.deepwebaccess.com/oer/desktop/en/search.html' title='The Mason OER Metafinder') The Mason OER Metafinder
+                    li
+                        a(href='https://oasis.geneseo.edu/' title='OASIS Openly available content') OASIS Openly available content
+                        
+                hr
+                h3 Share with the library
+                p As the VEDT is producing new assets every day we’ve developed an upload system to share with the library - this provides the metadata 
+                
+                a(href='https://forms.gle/YAEpCF9ffRexgN9T7' title='Uploads to the VEDT') Fill in this form to throw your assets in the mix
+
+    include share.pug  
+    include footer.pug    

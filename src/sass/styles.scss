@@ -5,17 +5,26 @@ li {
 }
 
 #share {
-    position: absolute;
-    bottom: 40px;
+    //position: absolute;
+    //bottom: 40px;
+    margin-top: 40px;
 }
 
-.bg-success {}
+.bg-success {
+    background-color: #001a00;
+}
 
-.bg-secondary {}
+.bg-secondary {
+    background-color: #004d00;
+}
 
-.bg-danger {}
+.bg-danger {
+    background-color: #4d0027;
+}
 
-.bg-primary {}
+.bg-primary {
+    background-color: #00274d;
+}
 
 .bg-info {
     background-color: #004d4d;

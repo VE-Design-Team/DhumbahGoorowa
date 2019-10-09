@@ -1,6 +1,6 @@
 #share.container
-    row
-       col-6.d-flex.justify-content-center
+    .row
+       .col-12.d-flex.justify-content-center
 
             span#href1
             span#href2    
@@ -13,6 +13,9 @@
             a.btn.btn-light(href="dice.html" title="More resouces!" alt="more resources")
                 i.fas.fa-undo 
                 |  Roll again
+       .col-12.position-sticky     
+            p.small.text-center This resource is maintained without support by the Vocational Education Design Team, RMIT    
+    
 
             
 
@@ -27,7 +30,7 @@ script.
   }
   });
   clipboard.on('success', function(e) {
-  alert("Copied this URL to for sharing");
+  alert("Copied this URL to the clipboard for sharing");
   e.clearSelection();
   });
   $("#input-url").val(location.href);

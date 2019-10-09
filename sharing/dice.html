@@ -1,88 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Mix things up</title>
-    <!-- Font Awesome-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script type="text/javascript">
-        // Create an array of the links to choose from:
-        var links = new Array();
-        links[0] = "/acknowledgements.html";
-        links[1] = "/pressplay.html";
-        //links[2] = "http://www.yahoo.com/";
-        //links[3] = "http://www.apple.com/";
-        function openLink() {
-            // Chooses a random link:
-            var i = Math.floor(Math.random() * links.length);
-            // Directs the browser to the chosen target:
-            parent.location = links[i];
-            return false;
-        }
-    </script>
-</head>
-
-<body>
-    <div id="dice">
-        <div id="background"></div>
-        <div id="wrapper"><input id="secondroll" name="roll" type="checkbox" onclick="openLink();"><input id="roll" name="roll" type="checkbox"><label class="btn btn-danger" for="roll">Share me something</label><label class="btn btn-success" for="secondroll"><span>Let's go</span></label>
-            <div id="platform">
-                <div id="dice">
-                    <div class="side front">
-                        <div class="dot center"></div>
-                    </div>
-                    <div class="side front inner"></div>
-                    <div class="side top">
-                        <div class="dot dtop dleft"></div>
-                        <div class="dot dbottom dright"></div>
-                    </div>
-                    <div class="side top inner"></div>
-                    <div class="side right">
-                        <div class="dot dtop dleft"></div>
-                        <div class="dot center"></div>
-                        <div class="dot dbottom dright"></div>
-                    </div>
-                    <div class="side right inner"></div>
-                    <div class="side left">
-                        <div class="dot dtop dleft"></div>
-                        <div class="dot dtop dright"></div>
-                        <div class="dot dbottom dleft"></div>
-                        <div class="dot dbottom dright"></div>
-                    </div>
-                    <div class="side left inner"></div>
-                    <div class="side bottom">
-                        <div class="dot center"></div>
-                        <div class="dot dtop dleft"></div>
-                        <div class="dot dtop dright"></div>
-                        <div class="dot dbottom dleft"></div>
-                        <div class="dot dbottom dright"></div>
-                    </div>
-                    <div class="side bottom inner"></div>
-                    <div class="side back">
-                        <div class="dot dtop dleft"></div>
-                        <div class="dot dtop dright"></div>
-                        <div class="dot dbottom dleft"></div>
-                        <div class="dot dbottom dright"></div>
-                        <div class="dot center dleft"></div>
-                        <div class="dot center dright"></div>
-                    </div>
-                    <div class="side back inner"></div>
-                    <div class="side cover x"></div>
-                    <div class="side cover y"></div>
-                    <div class="side cover z"></div>
-                </div>
-            </div>
-        </div>
-        <!-- partial-->
-    </div>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</body>
-
-</html>
-<!--include share.pug     -->
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Mix things up</title><!-- Font Awesome--><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"><link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script><script type="text/javascript">// Create an array of the links to choose from:
+var links = new Array();
+links[0] = "acknowledgements.html";
+links[1] = "pressplay.html";
+//links[2] = "http://www.yahoo.com/";
+//links[3] = "http://www.apple.com/";
+function openLink() {
+// Chooses a random link:
+var i = Math.floor(Math.random() * links.length);
+// Directs the browser to the chosen target:
+parent.location = links[i];
+return false;
+}</script></head><body><div id="dice"><div id="background"></div><div id="wrapper"><input id="secondroll" name="roll" type="checkbox" onclick="openLink();"><input id="roll" name="roll" type="checkbox"><label class="btn btn-danger" for="roll">Share me something</label><label class="btn btn-success" for="secondroll"><span>Let's go</span></label><div id="platform"><div id="dice"><div class="side front"><div class="dot center"></div></div><div class="side front inner"></div><div class="side top"><div class="dot dtop dleft"></div><div class="dot dbottom dright"></div></div><div class="side top inner"></div><div class="side right"><div class="dot dtop dleft"></div><div class="dot center"></div><div class="dot dbottom dright"></div></div><div class="side right inner"></div><div class="side left"><div class="dot dtop dleft"></div><div class="dot dtop dright"></div><div class="dot dbottom dleft"></div><div class="dot dbottom dright"></div></div><div class="side left inner"></div><div class="side bottom"><div class="dot center"></div><div class="dot dtop dleft"></div><div class="dot dtop dright"></div><div class="dot dbottom dleft"></div><div class="dot dbottom dright"></div></div><div class="side bottom inner"></div><div class="side back"><div class="dot dtop dleft"></div><div class="dot dtop dright"></div><div class="dot dbottom dleft"></div><div class="dot dbottom dright"></div><div class="dot center dleft"></div><div class="dot center dright"></div></div><div class="side back inner"></div><div class="side cover x"></div><div class="side cover y"></div><div class="side cover z"></div></div></div></div><!-- partial--></div><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script></body></html><!--include share.pug     -->

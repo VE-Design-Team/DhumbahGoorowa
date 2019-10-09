@@ -1,11 +1,24 @@
-$red: red;
-h1 {
-    color: $red;
+p,
+ul,
+li {
+    color: #fff;
 }
 
 #share {
     position: absolute;
     bottom: 40px;
+}
+
+.bg-success {}
+
+.bg-secondary {}
+
+.bg-danger {}
+
+.bg-primary {}
+
+.bg-info {
+    background-color: #004d4d;
 }
 
 #dice {
@@ -271,4 +284,20 @@ h1 {
             content: "Loading...";
         }
     }
+}
+
+a {
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+    color: #fff;
 }

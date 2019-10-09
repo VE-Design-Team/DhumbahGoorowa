@@ -2,14 +2,10 @@
     .row
        .col-12.d-flex.justify-content-center
 
-            span#href1
-            span#href2    
+            span#href1 
             script.
                 document.getElementById("href1").innerHTML =
-                "<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";
-            script.
-                document.getElementById("href2").innerHTML =
-                "<a class= 'btn btn-light mr-3' href='mailto:&subject=Check%20this%20out&body=" + window.location.href + "'><i class='far fa-envelope'></i> Email</a>";  
+                "<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";  
             a.btn.btn-light(href="dice.html" title="More resouces!" alt="more resources")
                 i.fas.fa-undo 
                 |  Roll again

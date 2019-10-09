@@ -1,0 +1,40 @@
+#share.container
+    row
+       col-6.d-flex.justify-content-center
+
+            span#href1
+            span#href2    
+            script.
+                document.getElementById("href1").innerHTML =
+                "<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";
+            script.
+                document.getElementById("href2").innerHTML =
+                "<a class= 'btn btn-light mr-3' href='mailto:&subject=Check%20this%20out&body=" + window.location.href + "'><i class='far fa-envelope'></i> Email</a>";  
+            a.btn.btn-light(href="dice.html" title="More resouces!" alt="more resources")
+                i.fas.fa-undo 
+                |  Roll again
+
+            
+
+<!-- The button used to copy the text -->
+
+.wrapper
+  input#input-url(type='hidden' value='Copied!')
+script.
+  var clipboard = new Clipboard('.btn-copy', {
+  text: function() {
+  return document.querySelector('input[type=hidden]').value;
+  }
+  });
+  clipboard.on('success', function(e) {
+  alert("Copied this URL to for sharing");
+  e.clearSelection();
+  });
+  $("#input-url").val(location.href);
+  //safari
+  if (navigator.vendor.indexOf("Apple")==0 && /\\sSafari\//.test(navigator.userAgent)) {
+  $('.btn-copy').on('click', function() {
+  var msg = window.prompt("Copy this link", location.href);
+  });
+  }
+

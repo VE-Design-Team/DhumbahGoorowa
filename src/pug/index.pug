@@ -55,13 +55,11 @@ html.no-js(lang='')
       window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\\/script>')
     script(src='js/plugins.js')
     script(src='js/main.js')
-    // Google Analytics: change UA-XXXXX-Y to be your site's ID.
+    // Global site tag (gtag.js) - Google Analytics
+    script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-149716401-1')
     script.
-      window.ga = function () {
-      ga.q.push(arguments)
-      };
-      ga.q = [];
-      ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto');
-      ga('send', 'pageview')
-    script(src='https://www.google-analytics.com/analytics.js', async='', defer='')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-149716401-1');
+

@@ -1,0 +1,22 @@
+mixin title
+    | Acknowledgements
+body    
+    include header.pug
+    .container
+        row
+            col-12
+                h1 
+                    +title
+                p These resources have been provided through RMIT's internal channels to the VEDT, and by digging by the following people (in no order)
+                ul 
+                    li 
+                    li Sam Malcolm 
+                    li Tim O'Connor
+                h2 This site
+                p Includes technologies and resouces from
+                ul
+                    li FontAwesome - https://fontawesome.com/
+                    li Dice Rolling thingo - https://codepen.io/TaeKwonJoe/pen/LRaoJW        
+                    li Bootstrap - https://getbootstrap.com
+    include share.pug  
+    include footer.pug    

@@ -1,0 +1,28 @@
+mixin title
+    | Creative Commons
+body.bg-secondary  
+    include header.pug
+    .container.mb-5
+        row
+            col-12
+                h1.pt-3 
+                    +title
+                p Just this year Creative Commons updated their media searching tool, it's awesome.  They provide free* assets for use in learning material if referenced correctly. They even make that part easy 
+
+                hr
+                h3 Dive in!
+                ul
+                    li 
+                        a(href='https://ccsearch.creativecommons.org/' target='_blank' title='CC Search - Creative Commons') View the search 
+                br
+                h3 While you're here
+                p You may read up on how RMIT can support you to ensure you can mainting copyright standards in learning material. Even for stuff that is *free.
+                ul
+                    li 
+                        a(href='https://www.rmit.edu.au/staff/services-and-tools/professional-services/copyright-services/copyright-advice-for-learning-and-teaching/images-and-copyright' target='_blank' title='RMITs Copyright guidance resources') Have a look at RMITs Copyright guidance resources
+                        
+
+    include share.pug  
+    include footer.pug    
+
+

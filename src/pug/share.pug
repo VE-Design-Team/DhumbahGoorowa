@@ -1,20 +1,17 @@
 #share.container
-    .row
-       .col-12.d-flex.justify-content-center
-
-            span#href1 
-            script.
-                document.getElementById("href1").innerHTML =
-                "<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";  
-            a.btn.btn-light(href="dice.html" title="More resouces!" alt="more resources")
-                i.fas.fa-undo 
-                |  Roll again
-       .col-12   
-            p.small.text-center.text-muted This resource is offered in kind and without support by the Vocational Education Design Team, RMIT    
-      
-
-<!-- The button used to copy the text -->
-
+  .row
+    .col-12.d-flex.justify-content-center
+      span#href1  
+      script.
+        document.getElementById("href1").innerHTML =
+        "<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";
+      a.btn.btn-light(href='dice.html' title='More resouces!' alt='more resources')
+        i.fas.fa-undo  
+        |  Roll again
+    .col-12
+      p.small.text-center.text-dark.mt-3
+        | This resource is offered in kind and without support by the Vocational Education Design Team, RMIT.
+// The button used to copy the text
 .wrapper
   input#input-url(type='hidden' value='Copied!')
 script.
@@ -29,9 +26,8 @@ script.
   });
   $("#input-url").val(location.href);
   //safari
-  if (navigator.vendor.indexOf("Apple")==0 && /\\sSafari\//.test(navigator.userAgent)) {
+  if (navigator.vendor.indexOf("Apple")==0 && /\\\sSafari\//.test(navigator.userAgent)) {
   $('.btn-copy').on('click', function() {
   var msg = window.prompt("Copy this link", location.href);
   });
   }
-

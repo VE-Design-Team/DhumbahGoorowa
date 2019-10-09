@@ -1,5 +1,5 @@
 <div class="container" id="share"><div class="row"><div class="col-12 d-flex justify-content-center"><span id="href1"> </span><script>document.getElementById("href1").innerHTML =
-"<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";  </script><a class="btn btn-light" href="dice.html" title="More resouces!" alt="more resources"><i class="fas fa-undo"> </i> Roll again</a></div><div class="col-12">  <p class="small text-center text-muted">This resource is offered in kind and without support by the Vocational Education Design Team, RMIT    </p></div></div></div><!-- The button used to copy the text --><div class="wrapper"><input id="input-url" type="hidden" value="Copied!"/></div><script>var clipboard = new Clipboard('.btn-copy', {
+"<a class= 'btn btn-light btn-copy mr-3' href='" + window.location.href + "'><i class='far fa-copy'></i> Copy</a>";</script><a class="btn btn-light" href="dice.html" title="More resouces!" alt="more resources"><i class="fas fa-undo"> </i> Roll again</a></div><div class="col-12"><p class="small text-center text-dark mt-3">This resource is offered in kind and without support by the Vocational Education Design Team, RMIT.</p></div></div></div><!-- The button used to copy the text--><div class="wrapper"><input id="input-url" type="hidden" value="Copied!"/></div><script>var clipboard = new Clipboard('.btn-copy', {
 text: function() {
 return document.querySelector('input[type=hidden]').value;
 }
@@ -10,7 +10,7 @@ e.clearSelection();
 });
 $("#input-url").val(location.href);
 //safari
-if (navigator.vendor.indexOf("Apple")==0 && /\\sSafari\//.test(navigator.userAgent)) {
+if (navigator.vendor.indexOf("Apple")==0 && /\\\sSafari\//.test(navigator.userAgent)) {
 $('.btn-copy').on('click', function() {
 var msg = window.prompt("Copy this link", location.href);
 });

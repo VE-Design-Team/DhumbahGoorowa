@@ -1,0 +1,26 @@
+mixin title
+    | Assessibility resources
+body.bg-primary  
+    include header.pug
+    .container.mb-5
+        row
+            col-12
+                h1.pt-3 
+                    +title
+                p Doing disgital accessibility right is hard. Especially if you want to do fancy things.
+                p You CAN read the spec, (it's long) or stand on the shoulders of giants
+                ul
+                    li 
+                        a(href='https://www.w3.org/TR/WCAG21/' title='WCAG 2.1 Spec') WCAG 2.1 Spec
+                    li We suggest joining the Accessibility Commmunity of practice on yammer
+                    li 
+                        a(href='https://docs.google.com/spreadsheets/d/1tdELkXw2kiHk-wsUyxZQn0OoHgBjU9M7IQOGi4hefHU/edit#gid=0' title='RMIT colours accessiblity check') RMIT colours accessiblity check
+                    li Get to know the Canvas A11y tool.
+                hr
+                h3 
+                
+
+    include share.pug  
+    include footer.pug    
+
+
